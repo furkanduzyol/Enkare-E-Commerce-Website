@@ -1164,6 +1164,25 @@ footer .copyright{
 
 }*/
 
+#about-head {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+#about-head img {
+  height: 400px;
+  border-radius: 5%;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+#about-head .paragraf {
+  
+  width: 100%;
+  margin-right: 45px;
+}
+
 /*Contact Page*/
 
 #contact-details {
@@ -1204,7 +1223,7 @@ footer .copyright{
 #subtotal {
   width: 100%;
   padding: 20px;
-  
+
 }
 
 
