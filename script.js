@@ -16,83 +16,82 @@ if (close) {
         nav.classList.remove('active');
     })
 }
-
 const products = [
     {
         "id": 1,
-        "name": "Ürün1",
+        "name": "Elisa Masa Sandalye Takımı, 4 Kişilik Mutfak Masası",
         "price": 8900.00,
         "image": "img/products/product1.1.webp"
     },
     {
         "id": 2,
-        "name": "Ürün2",
+        "name": "Beyaz Küçük Mdf Masa, Elisa Sandalye Takımı",
         "price": 11900.00,
         "image": "img/products/product2.1.webp"
     },
     {
         "id": 3,
-        "name": "Ürün3",
+        "name": "Küçük Mdf Masa Takımı Vegas Düğün Sandalyesi",
         "price": 7747.86,
         "image": "img/products/product3.1.webp"
     },
     {
         "id": 4,
-        "name": "Ürün4",
+        "name": "Papatya Masa Sandalye Takımı, Mutfak Masası, Deri Sandalye",
         "price": 9373.94,
         "image": "img/products/product4.1.webp"
     },
     {
         "id": 5,
-        "name": "Ürün5",
+        "name": "Badem Masa Sandalye Takımı,4 Kişilik Mutfak Masası",
         "price": 9999.00,
         "image": "img/products/product5.1.webp"
     },
     {
         "id": 6,
-        "name": "Ürün6",
+        "name": "Gri Elisa Masa Sandalye Takımı, Mutfak Masası",
         "price": 8900.00,
         "image": "img/products/product6.1.webp"
     },
     {
         "id": 7,
-        "name": "Ürün7",
+        "name": "Antrasit Elisa Masa Sandalye Takımı,yuvarlak Mutfak Masası",
         "price": 8900.00,
         "image": "img/products/product7.1.webp"
     },
     {
         "id": 8,
-        "name": "Ürün8",
+        "name": "Elisa Masa Sandalye Takımı, 4 Kişilik Mutfak Masası",
         "price": 8900.00,
         "image": "img/products/product8.1.webp"
     },
     {
         "id": 9,
-        "name": "Ürün9",
+        "name": "Beyaz Ayaklı Çam Desen Küçük Mdf Masa, Açılabilir Mutfak Masası",
         "price": 5499.00,
         "image": "img/products/product9.1.webp"
     },
     {
         "id": 10,
-        "name": "Ürün10",
+        "name": "Siyah Ayaklı Çam Desen Küçük Mdf Masa, Açılabilir Mutfak",
         "price": 5499.00,
         "image": "img/products/product10.1.webp"
     },
     {
         "id": 11,
-        "name": "Ürün11",
+        "name": "Beyaz Ayaklı Küçük Mdf Masa, Açılabilir Mutfak Masası",
         "price": 5499.00,
         "image": "img/products/product11.1.webp"
     },
     {
         "id": 12,
-        "name": "Ürün12",
+        "name": "Siyah Ayaklı Küçük Mdf Masa, Açılabilir Mutfak Masası",
         "price": 5499.00,
         "image": "img/products/product12.1.webp"
     },
     {
         "id": 13,
-        "name": "Ürün13",
+        "name": "Karamel Elisa Masa Sandalye Takımı, 4 Kişilik Mutfak Masası",
         "price": 8900.00,
         "image": "img/products/product13.1.webp"
     }
