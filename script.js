@@ -568,6 +568,18 @@ function handleRemoveItem(event) {
     saveCart(); // Save cart to localStorage after removing item
     renderCart();
 }
+/*
+function handleRemoveItem(event) {
+    event.preventDefault();
+    const id = parseInt(event.currentTarget.dataset.id);
+    const itemIndex = cart.findIndex(item => item.id === id);
+
+    if (itemIndex !== -1) {
+        cart.splice(itemIndex, 1); // Remove the item at the specified index
+        saveCart(); // Save cart to localStorage after removing the item
+        renderCart(); // Re-render the cart
+    }
+}*/
 
 // Event listeners
 document.addEventListener('DOMContentLoaded', () => {
@@ -584,30 +596,45 @@ document.addEventListener('DOMContentLoaded', () => {
         //const itemIndex1 = cart.findIndex(item => item.id === id);
         if (removeLink) {
             //cart.splice(itemIndex, 1);
-            alert('1');
-            
+            alert('1');   
             handleRemoveItem(event);
         }
     });
 });
 
 
+
+function handleAddToCart(productId) {
+    const quantityInput = document.getElementById(`quantity-${productId}`);
+    const quantity = quantityInput ? quantityInput.value : 1; // Default to 1 if input is not found
+    addToCart(productId, quantity);
+}
+
+
+
 //Kinda working but not sure
-function addToCart(productId) {
+function addToCart(productId, quantity) {
     // Find the product based on its id
     const product = products.find(item => item.id === productId);
+
+    if (!product) {
+        console.error("Product not found");
+        return;
+    }
 
     // Check if product is already in the cart
     const existingProduct = cart.find(item => item.id === productId);
 
+    const quantityToAdd = parseInt(quantity, 10); // Ensure quantity is a number
+
     if (existingProduct) {
         // If product already exists in the cart, increase quantity
-        existingProduct.quantity += 1;
+        existingProduct.quantity += quantityToAdd;
     } else {
-        // If product doesn't exist in the cart, add it with a quantity of 1
+        // If product doesn't exist in the cart, add it with the specified quantity
         cart.push({
             ...product,
-            quantity: 1
+            quantity: quantityToAdd
         });
     }
 
@@ -615,6 +642,8 @@ function addToCart(productId) {
     saveCart();
     renderCart(); // Update the UI
 }
+
+
 
 // Event listener for "Sepete Ekle" button
 document.querySelectorAll('.addCart').forEach(button => {
