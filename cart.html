@@ -20,7 +20,7 @@
             <div class="menu_bar">
                 <ul id="navbar">
                     <li> <a href="index.html">Ana Sayfa</a></li>
-                    <li> <a href="shop.html">Mağaza <i class="fas fa-caret-down"></i></a>
+                    <li> <a href="4takımpage1.html">Mağaza <i class="fas fa-caret-down"></i></a>
                     <div class="drowdown__menu">
                         <ul>
                             <li><a href="4takımpage1.html">4 Kişilik İç Mekan Takımlar</a></li>
@@ -34,7 +34,7 @@
                     <li> <a href="blog.html">Blog</a></li>
                     <li> <a href="about.html">Hakkımızda</a></li>
                     <li> <a href="contact.html">İletişim</a></li>
-                    <li id="lg-bag"> <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li id="lg-bag"> <a class= "active" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
                     <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
                 </ul>
             </div>
@@ -46,24 +46,28 @@
 
         </section>
 
-        <section id="page-header" class="blog-header">
-            <h2>#readmore</h2>
-            <p>Read all case studies about our products!</p>
-        </section>
 
         <section id="cart" class="section-p1">
             <table width="100%">
                 <thead>
                     <tr>
-                        <td>REMOVE</td>
-                        <td>IMAGE</td>
-                        <td>PRODUCT</td>
-                        <td>PRICE</td>
-                        <td>QUANTITY</td>
-                        <td>SUBTOTAL</td>
+                        <td>Kaldır</td>
+                        <td>Resim</td>
+                        <td>Ürün</td>
+                        <td>Fiyat</td>
+                        <td>Adet</td>
+                        <td>Alt Toplam</td>
                     </tr>
                 </thead>
                 <tbody>
+                    <tr>
+                        <td><button class="remove-item" data-id="1">Remove</button></td>
+                        <td><img src="img/item1.jpg" alt="Item"></td>
+                        <td>Item Name</td>
+                        <td>$20</td>
+                        <td><input type="number" class="quantity-input" data-id="1" value="2"></td>
+                        <td>$40</td>
+                    </tr>
                     
                 </tbody>
             </table>
@@ -72,13 +76,13 @@
         <section id="cart-add" class="section-p1">
             <div id="aaa">
                 <div id="coupon">
-                <h3>Apply Coupon</h3>
-                <div><input type="text" placeholder="Enter Your Coupon">
-                <button class="normal">Apply</button></div>
+                <h3>Kupon Kullan</h3>
+                <div><input type="text" placeholder="Kodu Girin">
+                <button class="normal">Uygula</button></div>
             </div>
 
             <div id="subtotal">
-                <h3>Card Totals</h3>
+                <h3>Sepet Toplamı</h3>
                 <table>
                     <tr>
                         <td>Cart Subtotal</td>
@@ -95,7 +99,7 @@
                         <td><strong>$ 335</strong></td>
                     </tr>
                 </table>
-                <a href="https://square.link/u/0POeBR38" target="_blank"><button class="normal">Proceed to Checkout</button></a>
+                <a href="https://square.link/u/0POeBR38" target="_blank"><button class="normal">Ödemeye Devam Et</button></a>
             </div>
 
             </div>
