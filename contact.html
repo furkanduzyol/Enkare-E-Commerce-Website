@@ -11,6 +11,13 @@
         <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" /> -->
 
         <link rel="stylesheet" href="style.css">
+        <style>
+            body.dark-mode {
+               background-color: #201f1f;
+               color: white;
+                                 }
+         </style> 
+
     </head>
 
     <body>
@@ -36,6 +43,21 @@
                     <li> <a class= "active" href="contact.html">İletişim</a></li>
                     <li id="lg-bag"> <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
                     <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+                    <html lang="en">
+                        <head>
+                            <meta charset="UTF-8">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                            
+                            <link rel="stylesheet" href="style.css">
+                        
+                        </head>
+                        <body>
+                            <button id="darkModeToggle"><i class="fa-regular fa-moon fa-2xl"></i></button>  
+                            <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>                        
+                           <script src="script.js"></script>
+                        </body>
+                     
+                        </html>
                 </ul>
             </div>
             <div id="mobile">
@@ -75,10 +97,21 @@
                     </li>
                 </div>
             </div>
+           
             <div class="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1850.8446609493076!2d35.47215072498524!3d38.723840344105234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x152b111fa3bb4751%3A0x412bc80e90e4a010!2sEnkare%20Home!5e0!3m2!1str!2str!4v1728697905328!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
             </div>
+            <style>
+                body.dark-mode h2 {
+                 font-size: 46px;
+                 line-height: 54px;
+                 color: #f4f2f2;
+                }
+                body.dark-mode p{
+                    color: #f4f2f2;  
+                }
+            </style>
         </section>
 
         <section id="form-details">
@@ -91,9 +124,8 @@
                 <input type="email" name="email" placeholder="E-mail" required>
                 <!--<input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"> -->
                 <input type="text" placeholder="Konu" required>
-                <textarea name="MESSAGE" id="" rows = "10" cols = "30" placeholder="Mesajınızı buraya yazın" required></textarea>
+                <textarea name="MESSAGE" id="" rows = "5" cols = "15"  placeholder="Mesajınızı buraya yazın" required></textarea>
                 <button class="normal" type="submit">Gönder</button>
-               
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_next" value="https://furkanduzyol.github.io/Enkare-E-Commerce-Website/contact.html">
 
@@ -161,6 +193,14 @@
             <div class="copyright">
                 <p>© 2022, Enkare Home - HTML CSS E-Ticaret Website</p>
             </div>
+            <style>
+                body.dark-mode h4{
+                    color: #f4f2f2;
+                }
+                body.dark-mode a{
+                    color: #f4f2f2;
+                }
+            </style>
         </footer>
 
         <script src="script.js"></script>
