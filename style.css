@@ -36,7 +36,7 @@ h6 {
 
 p {
   font-size: 16px;
-  color: #465b52;
+  color: #525b46;
   margin: 15px 0 20px 0;
 }
 
@@ -52,7 +52,7 @@ button.normal{
   font-size: 14px;
   font-weight: 600;
   padding: 15px 30px;
-  color: #000;
+  color: #000000;
   background-color: #fff;
   border-radius: 4px;
   cursor: pointer;
@@ -159,6 +159,7 @@ body {
   font-weight: 600;
   color: #1a1a1a;
   transition: 0.3s ease;
+
 }
 
 #navbar li a:hover,
@@ -177,6 +178,7 @@ body {
   left: 20px;
 
 }
+
 
 #mobile{
   display: none;
@@ -212,9 +214,9 @@ body {
   color: #088178;
 }
 #hero button{
-  background-image: url(img/button.png);
+  background-image: url(img/tus.png);
   background-color: transparent;
-  color: #088178;
+  color: #131414;
   border: 0;
   padding: 14px 80px 14px 65px;
   background-repeat: no-repeat;
@@ -320,14 +322,14 @@ body {
 
 }
 #product1 .pro .des span{
-  color: #606063;
+  color: #606361;
   font-size: 12px;
 
 }
 
 #product1 .pro .des h5{
   padding-top: 7px;
-  color: #1a1a1a;
+  color: #0f0f0f;
   font-size: 14px;
 
 }
@@ -385,7 +387,7 @@ body {
   padding: 10px 0;
 }
 #banner h2 span{
-  color: #ef3636;
+  color: #ffffff;
   
 }
 
@@ -556,12 +558,13 @@ footer .logo{
 footer h4{
   font-size: 14px;
   padding-bottom: 20px;
+  color:#171918
 }
 
 footer a{
   font-size: 13px;
   text-decoration: none;
-  color: #222;
+  color: #252020;
   margin-bottom:10px;
 }
 
@@ -1284,3 +1287,27 @@ footer .copyright{
 #cart table tbody tr:nth-child(even){
   background-color: #eee;
 }
+
+
+
+/* Koyu tema */
+
+/*button.dark-mode {
+  background-color: #333;
+  color: white;
+}
+
+body.dark-mode h1 {
+  color: #ffffff;
+}
+
+body.dark-mode.h2 {
+
+  color: #ffffff;
+}
+
+body.dark-mode.h4 {
+  color: #ffffff;
+}*/
+
+
