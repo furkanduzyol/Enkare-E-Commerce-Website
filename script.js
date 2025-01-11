@@ -496,6 +496,8 @@ function saveCart() {
     localStorage.setItem('cart', JSON.stringify(cart));
 }
 
+
+
 // Function to render the cart
 function renderCart() {
     const tbody = document.querySelector('tbody');
@@ -523,15 +525,15 @@ function renderCart() {
     const subtotalElement = document.querySelector('#subtotal table');
     subtotalElement.innerHTML = `
         <tr>
-            <td>Cart Subtotal</td>
+            <td>Sepet Toplamı</td>
             <td>$ ${total.toFixed(2)}</td>
         </tr>
         <tr>
-            <td>Shipping</td>
-            <td>Free</td>
+            <td>Kargo</td>
+            <td>Ücretsiz</td>
         </tr>
         <tr>
-            <td><strong>Total</strong></td>
+            <td><strong>Toplam</strong></td>
             <td><strong>$ ${total.toFixed(2)}</strong></td>
         </tr>
     `;
@@ -562,11 +564,17 @@ function handleQuantityChange(event) {
 
 // Function to handle remove item
 function handleRemoveItem(event) {
-    event.preventDefault();
-    const id = parseInt(event.currentTarget.dataset.id);
-    cart = cart.filter(item => item.id !== id);
-    saveCart(); // Save cart to localStorage after removing item
-    renderCart();
+    const removeLink = event.target.closest('a.remove');
+    if (!removeLink) return;
+
+    const id = parseInt(removeLink.dataset.id);
+
+    const itemIndex = cart.findIndex(item => item.id === id);
+    if (itemIndex !== -1) {
+        cart.splice(itemIndex, 1); // Remove item from cart
+        saveCart(); // Save updated cart
+        renderCart(); // Re-render the cart UI
+    }
 }
 /*
 function handleRemoveItem(event) {
@@ -596,7 +604,7 @@ document.addEventListener('DOMContentLoaded', () => {
         //const itemIndex1 = cart.findIndex(item => item.id === id);
         if (removeLink) {
             //cart.splice(itemIndex, 1);
-            alert('1');   
+               
             handleRemoveItem(event);
         }
     });
@@ -642,6 +650,8 @@ function addToCart(productId, quantity) {
     saveCart();
     renderCart(); // Update the UI
 }
+// Attach cart to window object for global access
+window.cart = cart;
 
 
 
